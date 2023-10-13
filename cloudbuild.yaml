@@ -13,10 +13,10 @@ steps:
   args:
     - '-c'
     - |
-      docker build -t web-app -f dockerfile .
+      docker build -t node-app -f dockerfile .
       docker images
-      docker tag web-app us-east1-docker.pkg.dev/niveus-gcp-training-1/reon-repo/web-app:r1
-      # docker push us-east1-docker.pkg.dev/niveus-gcp-training-1/reon-repo/node-app:r1
+      docker tag node-app us-east1-docker.pkg.dev/niveus-gcp-training-1/reon-repo/node-app:r1
+      docker push us-east1-docker.pkg.dev/niveus-gcp-training-1/reon-repo/node-app:r1
       
 - name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
