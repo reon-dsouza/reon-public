@@ -15,7 +15,7 @@ steps:
     - |
       docker build -t hello-app -f dockerfile .
       docker images
-      # docker tag node-app us-east1-docker.pkg.dev/niveus-gcp-training-1/reon-repo/node-app:a1
+      docker tag hello-app us-east1-docker.pkg.dev/niveus-gcp-training-1/reon-repo/hello-app:v01
       # docker push us-east1-docker.pkg.dev/niveus-gcp-training-1/reon-repo/node-app:a1
       
 - name: 'gcr.io/cloud-builders/gcloud'
