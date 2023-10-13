@@ -13,7 +13,7 @@ steps:
   args:
     - '-c'
     - |
-      docker build -t node-app -f dockerfile .
+      docker build -t hello-app -f dockerfile .
       docker images
       # docker tag node-app us-east1-docker.pkg.dev/niveus-gcp-training-1/reon-repo/node-app:a1
       # docker push us-east1-docker.pkg.dev/niveus-gcp-training-1/reon-repo/node-app:a1
